@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Image</title>
+    <style>
+        .left {
+            float: left;
+           
+        }
+        .right {
+            float: right;
+           
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .b-image-contain {
+            width: 300px;
+            height: 100px;
+            object-fit: contain;
+            border: 1px solid black;
+        }
+        .b-image-fill {
+            width: 300px;
+            height: 100px;
+            object-fit: fill;
+            border: 1px solid black;
+        }
+        .b-image-cover {
+            width: 300px;
+            height: 100px;
+            object-fit: cover;
+            border: 1px solid black;
+        }
+        .s-image-contain {
+            width: 300px;
+            height: 200px;
+            object-fit: contain;
+            border: 1px solid black;
+        }
+        .s-image-fill {
+            width: 300px;
+            height: 200px;
+            object-fit: fill;
+            border: 1px solid black;
+        }
+        .s-image-cover {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border: 1px solid black;
+        }
+        .gallery {
+            justify-content: center;
+            display: flex;
+            gap: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Favorite Animal</h1>
+    <img src="https://dogtowndogtraining.com/wp-content/uploads/2012/06/300x300-061-e1340955308953.jpg" alt="A placeholder image" width="300">
+    <p>This is an image of my favorite animal.</p>
+  
+    <hr>
+  
+    <h1>Click the Image : Link for Open new window</h1>
+    <a href="https://www.wikipedia.org" target="_blank">
+      <img src="data:image/jpeg;base64,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" alt="A clickable image" width="300">
+    </a>
+  
+    <hr>
+  
+    <h1>Image Alignment</h1>
+    <p><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5f4bd7a6-f763-4518-9b81-bdfd40ce3fc9/d26yer1-421bb5b8-9fc2-4d5a-b2d1-1e1f81b26b82.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVmNGJkN2E2LWY3NjMtNDUxOC05YjgxLWJkZmQ0MGNlM2ZjOVwvZDI2eWVyMS00MjFiYjViOC05ZmMyLTRkNWEtYjJkMS0xZTFmODFiMjZiODIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.p5vfqGmq9kIylfG3glHGa20CAPUtoWlAxKEGpIvGOi8" alt="Left aligned image" class="left">This image is aligned to the left.</p>
+    <p><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5f4bd7a6-f763-4518-9b81-bdfd40ce3fc9/d27o7od-b6a9c594-a44e-40e7-9150-1b0384f5c70b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVmNGJkN2E2LWY3NjMtNDUxOC05YjgxLWJkZmQ0MGNlM2ZjOVwvZDI3bzdvZC1iNmE5YzU5NC1hNDRlLTQwZTctOTE1MC0xYjAzODRmNWM3MGIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7ygdyL4ZPw539NivJaDPzRlbMjkixf6InsB4FvtpCAI" alt="Right aligned image" class="right">This image is aligned to the right.</p>
+    <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS75wNCMZiVUhAhTF4v7-SUnjD9gMv3H86cTbWZcfUMh7AJseFjGGl3NeiuJJfzFPVhTSU&usqp=CAU" alt="Center aligned image" class="center">This image is centered.</p>
+  
+    <hr>
+  
+    <h1>Object-Fit: Image Bigger than Container (300x100)</h1>
+    <div>
+      <img src="images/rabbit3.jpg" alt="Sample Image" class="b-image-contain">
+      <p>contain: ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ อาจมีพื้นที่ว่างถ้าอัตราส่วนไม่ตรงกัน</p>
+      <br>
+    </div>
+    <div>
+      <img src="images/rabbit3.jpg" alt="Sample Image" class="b-image-fill">
+      <p>fill (ค่าเริ่มต้น): ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา อาจทำให้เนื้อหาถูกยืดหรือบีบ</p>
+      <br>
+    </div>
+    <div>
+      <img src="images/rabbit3.jpg" alt="Sample Image" class="b-image-cover">
+      <p>cover: ปรับขนาดเนื้อหาให้เติมเต็มกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ ส่วนที่เกินจะถูกตัดออก</p>
+      <br>
+    </div>
+  
+  
+    <hr>
+  
+    <h1>Object-Fit: Image Smaller than Container</h1>
+    <div>
+      <img src="https://www.pngkey.com/png/detail/14-148130_minion-imagenes-de-100x100-pixeles.png" alt="Sample Image" class="s-image-fill">
+      <p>fill (ค่าเริ่มต้น): ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา อาจทำให้เนื้อหาถูกยืดหรือบีบ</p>
+    </div>
+  
+    <div>
+      <img src="https://www.pngkey.com/png/detail/14-148130_minion-imagenes-de-100x100-pixeles.png" alt="Sample Image" class="s-image-contain">
+      <p>contain: ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ อาจมีพื้นที่ว่างถ้าอัตราส่วนไม่ตรงกัน</p>
+    </div>
+  
+    <div>
+      <img src="https://www.pngkey.com/png/detail/14-148130_minion-imagenes-de-100x100-pixeles.png" alt="Sample Image" class="s-image-cover">
+      <p>cover: ปรับขนาดเนื้อหาให้เติมเต็มกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ ส่วนที่เกินจะถูกตัดออก</p>
+    </div>
+  
+  
+    <hr>
+  
+  
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+      <img src="https://i.pinimg.com/236x/1c/dc/6d/1cdc6da3ae6c904f7570aa96dba099b1.jpg" alt="Image 1" width="100" height="100">
+      <img src="https://img-19.ccm2.net/8trT73OJjQ9RladAYYrlpCwEjRk=/330x330/e787e4204e42415494a35bdebd6e1068/auth-avatar/f12b4b50446675e3dbedf0a081db1957-Gabriel66335" alt="Image 2" width="120" height="120">
+      <img src="https://media.cheggcdn.com/media/c88/c88f6bca-3ab7-4de1-a342-0cce638dcd78/phpZdUMQY.png" alt="Image 3"  width="140" height="140">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx1hn4riwN9lVJImphzvjANZv2iT90qmHMJA&s" alt="Image 4" width="150" height="150">
+    </div>
+  
+    <hr>
+  
+  
+    <h1>FlexBox: </h1>
+    <div class="ex-flex">
+      <img src="images/flex.jpg" alt="Image 1">
+      <br>
+    </div>
+  
+    <hr>
+    <h1>FlexBox: justify-content</h1>
+    <div class="ex-flex">
+      <img src="images/justify-content.jpg" alt="Image 1">
+      <br>
+    </div>
+    
+    <hr>
+  
+  
+    <div class="back-to-home">
+      <a href="index.html">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,29 @@
+header{
+    background-color: #00ff91;
+    
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.Menu ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+
+
+
+footer{
+    background-color: #ff0000;
+
+
+}
+.container{
+    background-color: aqua;
+
+
+}
