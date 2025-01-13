@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+    table ,td, th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+        text-align: center;
+        width: 400px;
+        
+      }
+      th {
+        background-color: #04ffbc;
+      }
+       tr:{
+        border: 1px solid rgb(221, 29, 29);
+  
+       }
+       tr:hover {
+        background-color: #00eaff;
+       }
+      
+    </style>
+</head>
+<body>
+    <div>
+      <h1>Basic Table</h1>
+      <h3>Student List</h3>
+      <!-- Start Code Here -->
+       <table border ="1" cellpadding="1" cellspacing="1">
+         <tr>
+          <th>Name</td>
+          <th>class</td>
+          <th>Grade</td>
+         </tr>
+         <tr>
+          <td>อิ้ง</td>
+          <td>66/46</td>
+          <td>3.70</td>
+         
+        </tr>
+         <tr>
+          <td>โบ</td>
+          <td>66/46</td>
+          <td>3.88</td>
+        
+        </tr>
+         <tr>
+          <td>โอีค</td>
+          <td>66/46</td>
+          <td>3.50</td>
+          
+  
+          
+        </tr>
+      </table>
+      <!-- End Code Here -->
+      <hr>
+      <h1>Table with Colspan and Rowspan</h1>
+      <h3>Food Menu</h3>
+      <table border="1"  width="100%">
+        <tr>
+          <th>Day</th>
+          <th>Breakfast</th>
+          <th>Lunch</th>
+          <th>Dinner</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>Toast</td>
+          <td>Pizza</td>
+          <td>Pasta</td>
+        </tr>
+        <tr>
+          <td rowspan="2" bgcolor="#ffffaf">Tuesday</td>
+          <td>Pancakes</td>
+          <td rowspan="2" bgcolor="FFFF">Sandwich</td>
+          <td>Soup</td>
+        </tr>
+        <tr>
+          <td>Omelette</td>
+          <td>Steak</td>
+        
+        </tr>
+        <tr>
+          
+          <td colspan="4" bgcolor="	#008111">Special Dinner : Friday BBQ night!</td>
+        </tr>
+      <!-- Start Code Here -->
+      <!-- End Code Here -->
+      </table>
+      <hr>
+      <h1>Styled Table with CSS</h1>
+      <h3>Product List</h3>
+      <table >
+        <tr>
+          <th>Product</th>
+          <th>Category</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Laptop</td>
+          <td>Electronics</td>
+          <td>$999</td>
+        </tr>
+        <tr>
+          <td>Phone</td>
+          <td>Electronics</td>
+          <td>$599</td>
+        </tr>
+        <tr>
+          <td>Table</td>
+          <td>Furniture</td>
+          <td>$200</td>
+        </tr>
+      </table>
+    </div>
+  
+  
+    <hr>
+    <a href="index.html">Back to Home</a>
+  
+</body>
+</html>
