@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-register</title>
+    <style>
+        body {
+            font-family: Arial,sans-serif,Kanit  ;
+            margin: 0;
+            padding: 40px;
+            background-color: rgb(208, 208, 208);
+          
+         }
+         form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+         }
+         .container {
+          max-width: 600px; 
+          background-color: rgb(255, 255, 255);
+          padding: 40px;
+          border-radius: 10px;
+          box-shadow: 0px 5px 10px rgba(225, 5, 200, 0.1);
+          margin: auto;
+         }
+            input, select, textarea {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }  
+            button {
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: rgb(255, 2, 2);
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: rgb(0, 0, 0);
+            }
+            label {
+                font-size: 18px;
+                font-weight: bold;
+            }
+            textarea {
+                resize: none;
+            }
+            h1 {
+                text-align: center;
+                color: rgb(255, 0, 0);
+            }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: rgb(221, 0, 255);" >Prersonal Information</h1>
+        <form action="" method="">
+        <label for="N">Name</label>
+        <input type="text" name="N" id="N" placeholder="ป้อนชื่อ" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="ป้อนอีเมล" required>
+        <label for="date">Date of Birth</label>
+        <input type="date" name="date" id="date" required>
+        <label for="Gender">Gender</label>
+        <select name="province" id="province" >
+        <option value="">-- Select Gender--</option>
+        <option value="1">ชาย</option>
+        <option value="2">หญิง</option>
+        </select>
+        <label for="Hobbie">Hobbie</label>
+        <textarea name="Hobbie" id=Hobbie rows="4"  placeholder="List your hobbies"></textarea>
+        
+            <label for="country">country :</label>
+            <select name="province" id="province">
+                <option value="">-- Select country--</option>
+                <option value="A">ไทย</option>
+                <option value="B">เมียนมาร์</option>
+                <option value="C">จีน</option>
+                <option value="D">อินเดีย</option>
+                <option value="E">ญี่ปุ่น</option>
+            </select>
+            <button type="submit">ตกลง</button>
+        
+        
+                
+        </form>
+    </div>
+    
+</body>
+</html>
