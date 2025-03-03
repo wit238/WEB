@@ -29,9 +29,30 @@
                 <button class="btn-filled ">Sign up</button>
                 <button class="btn-outline">Login</button>
             </div>
+
+            
+
+            <!--Hamberger Menu<!-->
+            <div class="hamburger-icon" onclick="openMenu()">&#9776</div>
+
         </div>
 
     </header>
+
+    
+<!-- Full-Screen Menu -->
+    <div class="full-screen-menu" id="fullScreenMenu">
+        <div class="close-btn" onclick="closeMenu()">✖</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="W12_01_Login.html">Logout</a></li>
+        </ul>
+    </div>
 
 
     <div class="container">
@@ -56,7 +77,7 @@
             <p>Our SaaS solutions are flexible and can be tailored to your specific business requirements. We
                 understand that each organization is unique, and we are committed to delivering software that fits
                 your needs like a glove.</p>
-            <button class="btn primary">Learn more</button>
+            <button class="btn_primary">Learn more</button>
         </div>
         <div class="right-side">
             <img src="images/GUI.png" alt="img2">
@@ -67,7 +88,7 @@
             <h1>Dedicated support</h1>
             <p>Zephtor provides ongoing support and training to ensure you maximize the value of our software. Our
                 experts are here to assist you at every step of your digital transformation journey.</p>
-            <button class="btn primary">Learn more</button>
+            <button class="btn_primary">Learn more</button>
         </div>
         <div class="right-side">
             <img src="images/GUI2.png" alt="img3">
@@ -170,7 +191,7 @@
                 ahead of the curve.</p>
         </div>
           
-        </div>
+     </div>
       
     </section>
 
@@ -215,5 +236,21 @@
     </div>
     </div>
 </footer>
+
+<script>
+        function openMenu() {
+            document.getElementById("fullScreenMenu").style.display = "block";
+        }
+       
+        function closeMenu() {
+            document.getElementById("fullScreenMenu").style.display = "none";
+        }
+       
+    </script>
+
+
+
+
+<a href="index.html">Back To Home</a>
 </body>
 </html>
