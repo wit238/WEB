@@ -15,6 +15,8 @@
 <!-- FOnt Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+
+
  <style>
     body {
     background-color: #1a1a1a;
@@ -86,6 +88,17 @@
     padding: 5px 0;
     font-size: 1rem;
     }
+    @media screen and (max-width: 768px) {
+    .section {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    }
+    .ST{
+      flex-direction: row;
+      display: flex;
+    }
+  }
     </style>
 
     
@@ -148,20 +161,24 @@
     <br>
 
 
-    <div class="section section-reverse  pricing-card mt-5 p-4">
+    <div class="section section-reverse  pricing-card mt-5 p-">
       <div class="section-text ">
         <h2>บริษัท ซีพี รีเทลลิงค์ จํากัด</h2>
         <p>2020-2022</p>
-        <ul>
-          <li>สมัครสมาชิกบาริสต้า ร้านกาแฟมวลชน</li>
-          <li>เลื่อนตำแหน่งเป็นรองผู้จัดการ</li>
-          <li>เปลี่ยนสายงานเป็นผู้ดูแลเครื่องขายอัตโนมัติ</li>
-          <li>เลื่อนตำแหน่งเป็นหัวหน้าโซน หมอชิต บางเขน รังสิต</li>
-          <li>เปลี่ยนสายงาน เป็นการขนส่งของ Lotus.</li>
-        </ul>
+        <div class="ST">
+          <ul>
+            <li>สมัครสมาชิกบาริสต้า ร้านกาแฟมวลชน</li>
+            <li>เลื่อนตำแหน่งเป็นรองผู้จัดการ</li>
+          </ul>
+          <ul>
+             <li>เปลี่ยนสายงานเป็นผู้ดูแลเครื่องขายอัตโนมัติ</li>
+            <li>เลื่อนตำแหน่งเป็นหัวหน้าโซน หมอชิต บางเขน รังสิต</li>
+            <li>เปลี่ยนสายงาน เป็นการขนส่งของ Lotus.</li>
+          </ul>
+        </div>
       </div>
       <div class="section-image">
-        <img src="images/CP1" alt="CP Retaillink Logo" >
+        <img src="images/1667186913041-35d64ff7-a3f6-449b-a2a8-36425d028809.jpg" alt="CP Retaillink Logo" >
       </div>
     </div>
   </div>
